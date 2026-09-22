@@ -1,22 +1,59 @@
+```html
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
+
     <meta charset="UTF-8">
+
+    <!-- Agar tampilan responsive di HP, tablet, dan laptop -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Keyboard Belajar</title>
+
+    <!-- Menghubungkan CSS -->
     <link rel="stylesheet" href="style.css">
+
 </head>
+
 
 <body>
 
     <div class="keyboard-app">
+
+        <!-- JUDUL -->
         <h1>⌨️ Keyboard Belajar</h1>
 
-        <textarea id="display" placeholder="Ketik menggunakan keyboard di bawah..."></textarea>
+
+        <!--
+            Area untuk menampilkan hasil ketikan.
+
+            readonly digunakan agar:
+            - Keyboard HP tidak muncul
+            - Keyboard fisik tidak digunakan
+            - Input hanya melalui keyboard virtual
+        -->
+
+        <textarea
+            id="display"
+            placeholder="Ketik menggunakan keyboard virtual di bawah..."
+            readonly>
+        </textarea>
+
+
+        <!-- ================================= -->
+        <!--          KEYBOARD VIRTUAL          -->
+        <!-- ================================= -->
 
         <div class="keyboard">
 
+
+            <!-- ================================= -->
+            <!--              QWERTY               -->
+            <!-- ================================= -->
+
             <div class="row">
+
                 <button>Q</button>
                 <button>W</button>
                 <button>E</button>
@@ -27,9 +64,16 @@
                 <button>I</button>
                 <button>O</button>
                 <button>P</button>
+
             </div>
 
+
+            <!-- ================================= -->
+            <!--               ASDF                -->
+            <!-- ================================= -->
+
             <div class="row">
+
                 <button>A</button>
                 <button>S</button>
                 <button>D</button>
@@ -39,9 +83,16 @@
                 <button>J</button>
                 <button>K</button>
                 <button>L</button>
+
             </div>
 
+
+            <!-- ================================= -->
+            <!--               ZXCV                -->
+            <!-- ================================= -->
+
             <div class="row">
+
                 <button>Z</button>
                 <button>X</button>
                 <button>C</button>
@@ -49,20 +100,57 @@
                 <button>B</button>
                 <button>N</button>
                 <button>M</button>
+
             </div>
 
+
+            <!-- ================================= -->
+            <!--          TOMBOL KHUSUS            -->
+            <!-- ================================= -->
+
             <div class="row special">
-                <button id="backspace">⌫ Hapus</button>
-                <button id="space">SPACE</button>
-                <button id="enter">ENTER</button>
+
+                <button id="backspace">
+                    ⌫ HAPUS
+                </button>
+
+                <button id="space">
+                    SPASI
+                </button>
+
+                <button id="enter">
+                    ENTER
+                </button>
+
             </div>
+
 
         </div>
 
-        <button id="clear">🗑️ Bersihkan</button>
+
+        <!-- ================================= -->
+        <!--          TOMBOL BERSIHKAN         -->
+        <!-- ================================= -->
+
+        <button id="clear">
+            🗑️ BERSIHKAN
+        </button>
+
+
     </div>
 
+
+    <!-- ================================= -->
+    <!--       MENGHUBUNGKAN JAVASCRIPT    -->
+    <!-- ================================= -->
+
     <script src="script.js"></script>
+
+
+</body>
+
+</html>
+```
 
 </body>
 </html>
